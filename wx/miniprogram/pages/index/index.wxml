@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+ 
+  <view class="image">
+<image src="data:image/png;base64,{{imagePath}}"  ></image>
+ </view>  
+
+ <input name="user-input"  class:="input-row" type="text" maxlength="255" bindinput="bindKeyInput" auto-focus placeholder="{{placeholder}}"/>
+  <view class="userinfo">
+    <view class="qrcode-wrapper">
+      <button class="userinfo-button" bindtap="onHello">生成二维码</button>
+    </view>
+  </view>
+
+
+  
+</view>
